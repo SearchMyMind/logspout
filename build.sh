@@ -1,6 +1,9 @@
 #!/bin/sh
+
+
+
 set -e
-apk add --update go git mercurial
+apk add --update go git mercurial --repository http://nl.alpinelinux.org/alpine/v3.2/main/armhf/ --allow-untrusted
 mkdir -p /go/src/github.com/gliderlabs
 cp -r /src /go/src/github.com/gliderlabs/logspout
 cd /go/src/github.com/gliderlabs/logspout
