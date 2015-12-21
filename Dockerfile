@@ -1,4 +1,4 @@
-FROM armbuild/alpine:3.1
+FROM armbuild/alpine:3.2
 ENTRYPOINT ["/bin/logspout"]
 VOLUME /mnt/routes
 EXPOSE 8000
